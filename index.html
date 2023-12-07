@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <title>Studio</title>
   </head>
   <body class="container">
@@ -19,16 +23,18 @@
           >Web<span class="logocolor">Studio</span>
         </a>
         <ul class="list flex-items">
-          <li><a class="list-item link" href="./index.html">Studio</a></li>
-          <li>
+          <li class="list-contact">
+            <a class="list-item link" href="./index.html">Studio</a>
+          </li>
+          <li class="list-contact">
             <a class="list-item link" href="./portfolio.html">Portfolio</a>
           </li>
           <li><a class="list-item link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="contact flex-address">
-        <ul class="list">
-          <li>
+      <address class="contact flex-nav">
+        <ul class="list flex-address">
+          <li class="list-contact">
             <a class="linkcolor link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
@@ -42,35 +48,35 @@
       </address>
     </header>
     <main>
-      <section class="bgd flex-one section">
+      <section class="bgd flex-one">
         <h1 class="headerstyl">Effective Solutions for Your Business</h1>
         <button class="btn-first" type="button">Order Service</button>
       </section>
-      <section class="flex-two section">
-        <h2>The main goals of the company</h2>
+      <section class="flex-two">
+        <h2 class="visually-hidden">The main goals of the company</h2>
         <ul class="list flex-three">
-          <li>
+          <li class="list-goals">
             <h3 class="hdr">Strategy</h3>
             <p class="prg">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="list-goals">
             <h3 class="hdr">Punctuality</h3>
             <p class="prg">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="list-goals">
             <h3 class="hdr">Diligence</h3>
             <p class="prg">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="list-goals">
             <h3 class="hdr">Technologies</h3>
             <p class="prg">
               Design practice focused on digital experiences. We bring forth a
@@ -79,10 +85,10 @@
           </li>
         </ul>
       </section>
-      <section class="flex-four section">
+      <section class="flex-four">
         <h2 class="header-low">What are we doing</h2>
         <ul class="list flex-img">
-          <li>
+          <li class="flex-img-rtv">
             <img
               src="./images/computer.jpg"
               alt="Monitor"
@@ -90,7 +96,7 @@
               height="300"
             />
           </li>
-          <li>
+          <li class="flex-img-rtv">
             <img
               src="./images/phonescreen.jpg"
               alt="A phone with four screenshots"
@@ -108,7 +114,7 @@
           </li>
         </ul>
       </section>
-      <section class="bgn-team flex-fife section">
+      <section class="bgn-team flex-fife">
         <h2 class="header-low">Our Team</h2>
         <ul class="list flex-team">
           <li class="bgr-white flex-person">
@@ -151,7 +157,6 @@
             <img
               src="./images/dw.jpg"
               alt="Daniel Wilson UI Designer"
-              width="264"
               height="260"
             />
             <div class="div-person">

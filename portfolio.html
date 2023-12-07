@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <title>Portfolio</title>
   </head>
   <body class="container">
@@ -19,16 +20,20 @@
           >Web<span class="logocolor">Studio</span>
         </a>
         <ul class="list flex-items">
-          <li><a class="list-item link" href="./index.html">Studio</a></li>
-          <li>
+          <li class="list-contact">
+            <a class="list-item link" href="./index.html">Studio</a>
+          </li>
+          <li class="list-contact">
             <a class="list-item link" href="./portfolio.html">Portfolio</a>
           </li>
-          <li><a class="list-item link" href="">Contacts</a></li>
+          <li class="list-contact">
+            <a class="list-item link" href="">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <address class="contact flex-address">
-        <ul class="list">
-          <li>
+      <address class="contact flex-nav">
+        <ul class="list flex-address">
+          <li class="list-contact">
             <a class="linkcolor link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
@@ -43,16 +48,26 @@
     </header>
     <main>
       <section>
-        <h1>Offer</h1>
-        <ul class="list">
-          <li><button class="btn" type="button">All</button></li>
-          <li><button class="btn" type="button">Web Site</button></li>
-          <li><button class="btn" type="button">App</button></li>
-          <li><button class="btn" type="button">Design</button></li>
-          <li><button class="btn" type="button">Marketing</button></li>
+        <h1 class="visually-hidden">Offer</h1>
+        <ul class="list flex-p-one">
+          <li class="flex-li-p">
+            <button class="btn-first-p" type="button">All</button>
+          </li>
+          <li class="flex-li">
+            <button class="btn" type="button">Web Site</button>
+          </li>
+          <li class="flex-li">
+            <button class="btn" type="button">App</button>
+          </lis=>
+          <li class="flex-li">
+            <button class="btn" type="button">Design</button>
+          </lis=>
+          <li class="flex-li">
+            <button class="btn" type="button">Marketing</button>
+          </li>
         </ul>
-        <ul class="list">
-          <li>
+        <ul class="list flex-p-two">
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/bankapp.jpg"
@@ -61,11 +76,13 @@
                 height="300"
               />
 
-              <h2 class="hdr">Banking App Interface Concept</h2>
-              <p class="prg">App</p>
+              <div class="div-app">
+                <h2 class="hdr">Banking App Interface Concept</h2>
+                <p> class="prg">App</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li  class="flex-p-img">
             <a class="link">
               <img
                 src="./images/cashless.jpg"
@@ -74,11 +91,13 @@
                 height="300"
               />
 
-              <h2 class="hdr">Cashless Payment</h2>
-              <p class="prg">Marketing</p>
+              <div class="div-app">
+                <h2 class="hdr">Cashless Payment</h2>
+                <p class="prg">Marketing</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li  class="flex-p-img">
             <a class="link">
               <img
                 src="./images/mediapp.jpg"
@@ -87,11 +106,13 @@
                 height="300"
               />
 
-              <h2 class="hdr">Meditation App</h2>
-              <p class="prg">App</p>
+              <div class="div-app">
+                <h2 class="hdr">Meditation App</h2>
+                <p class="prg">App</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li  class="flex-p-img">
             <a class="link">
               <img
                 src="./images/taxi.jpg"
@@ -100,11 +121,13 @@
                 height="300"
               />
 
-              <h2 class="hdr">Taxi Service</h2>
-              <p class="prg">Marketing</p>
+              <div class="div-app">
+                <h2 class="hdr">Taxi Service</h2>
+                <p class="prg">Marketing</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/screen-ilu.jpg"
@@ -112,12 +135,12 @@
                 width="360"
                 height="300"
               />
-
+            <div class="div-app">
               <h2 class="hdr">Screen Illustrations</h2>
-              <p class="prg">Design</p>
+              <p class="prg">Design</p></div>
             </a>
           </li>
-          <li>
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/online-course.jpg"
@@ -126,11 +149,11 @@
                 height="300"
               />
 
-              <h2 class="hdr">Online Courses</h2>
-              <p class="prg">Marketing</p>
+              <div class="div-app"><h2 class="hdr">Online Courses</h2>
+              <p class="prg">Marketing</p></div>
             </a>
           </li>
-          <li>
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/insta-stories.jpg"
@@ -139,11 +162,11 @@
                 height="300"
               />
 
-              <h2 class="hdr">Instagram Stories Concept</h2>
-              <p class="prg">Design</p>
+              <div class="div-app"><h2 class="hdr">Instagram Stories Concept</h2>
+              <p class="prg">Design</p></div>
             </a>
           </li>
-          <li>
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/organic-food.jpg"
@@ -152,11 +175,11 @@
                 height="300"
               />
 
-              <h2 class="hdr">Organic Food</h2>
-              <p class="prg">Web Site</p>
+              <div class="div-app"><h2 class="hdr">Organic Food</h2>
+              <p class="prg">Web Site</p></div>
             </a>
           </li>
-          <li>
+          <li class="flex-p-img">
             <a class="link">
               <img
                 src="./images/fresh-coffee.jpg"
@@ -165,14 +188,14 @@
                 height="300"
               />
 
-              <h2 class="hdr">Fresh Coffee</h2>
-              <p class="prg">Web Site</p>
+              <div class="div-app flex-a-p"><h2 class="hdr">Fresh Coffee</h2>
+              <p class="prg">Web Site</p></div>
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="bgd">
+    <footer class="bgd flex-footer">
       <a class="logo link" href="index.html"
         >Web<span class="ft-logo">Studio</span>
       </a>
