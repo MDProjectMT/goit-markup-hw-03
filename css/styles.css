@@ -94,13 +94,16 @@ li {
     radius: 4px;
 }
 .btn-first {
+    display: block;
+    min-width: 169px;
+    height: 56px;
     font-weight: 500;
     background-color: var(--color-text);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px 16px 32px;
-    border: 1px solid var(--color-text);
+    border: none;
     border-radius: 4px;
     color: var(--white-color);
     cursor: pointer;
@@ -218,7 +221,9 @@ a.link:hover, a.link:focus {
     text-align: center;
 }
 .list-contact {
-    padding-right: 40px;
+    margin-right: 40px;
+    padding: 24px 0;
+
 }
 .list-goals {
     padding-left: 16px;
@@ -237,7 +242,7 @@ a.link:hover, a.link:focus {
     overflow: hidden;
 }
 .container {
-    max-width: 1400px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -247,21 +252,22 @@ a.link:hover, a.link:focus {
     width: auto;
     height: 72px;
     border-bottom: 1px solid #E7E9FC;
-
 }
 .flex-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+.flex-logo {
+    margin-right: 76px;
+}
 .flex-items {
     display: flex;
-    margin: 0;
+    ;
 }
 .flex-address {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    gap:40px;
 }
 
 .flex-one {
