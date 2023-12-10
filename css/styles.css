@@ -99,21 +99,22 @@ li {
 }
 .btn-first {
     display: block;
+    align-items: center;
+    justify-content: center;
     min-width: 169px;
-    height: 56px;
     font-weight: 500;
     background-color: var(--color-text);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    border: none;
+    border: 1px solid var(--color-text);
     border-radius: 4px;
     color: var(--white-color);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
-.btn:hover, .btn:focus, .btn-first:hover, .btn-first-p:focus, .btn-first-p:hover, .btn-first:focus {
+.btn:hover, .btn:focus, .btn-first:hover, .btn-first:focus, .btn-first-p:focus, .btn-first-p:hover, .btn-p:hover, .btn-p {
     color: var(--white-color);
     background-color: var(--focus-hover);
     border: 1px solid transparent;
@@ -129,7 +130,6 @@ li {
 }
 .link {
     text-decoration: none;
-
 }
 a.link:hover, a.link:focus {
     color: var(--focus-hover);
