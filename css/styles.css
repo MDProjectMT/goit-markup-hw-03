@@ -236,19 +236,20 @@ a.link:hover, a.link:focus {
 .flex-container {
     border-bottom: 1px solid #E7E9FC;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
+.container { 
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.column {
-    flex-direction: column;
-    align-items: center;
+.container-flex-one {
+    display: flex;
+    justify-content: space-around;
 }
-.column-footer {
-    flex-direction: column;
+.container-flex-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 .block-footer {
     display: inline-block;
