@@ -66,6 +66,7 @@ section {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.02em;
     color: var(--white-color);
     max-width: 496px;
@@ -90,8 +91,9 @@ li {
     color: var(--color-text);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    padding: 12px, 24px, 12px, 24px;
-    radius: 4px;
+    padding: 12px 24px;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
 }
 .btn-first {
     display: block;
@@ -102,16 +104,17 @@ li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 32px;
     border: none;
     border-radius: 4px;
     color: var(--white-color);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
-.btn:hover, .btn:focus, .btn-first:hover, .btn-first:focus {
+.btn:hover, .btn:focus, .btn-first:hover, .btn-first-p:focus, .btn-first-p:hover, .btn-first:focus {
     color: var(--white-color);
     background-color: var(--focus-hover);
+    border: 1px solid transparent;
 }
 .btn-first-p {
     font-weight: 500;
@@ -122,26 +125,21 @@ li {
     color: var(--white-color);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    padding: 12px, 24px, 12px, 24px;
-    radius: 4px;
-    
-
+    padding: 12px 24px;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 2px 1px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
 }
 .link {
     text-decoration: none;
 
 }
 a.link:hover, a.link:focus {
-    color: var(--focus-hover);}
- 
-.linktel: {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--header-color);
-    text-decoration: none;
+    color: var(--focus-hover);
 }
+ 
 .linkcolor {
     color: var(--body-color);
     font-family: 'Roboto', sans-serif;
@@ -246,23 +244,24 @@ a.link:hover, a.link:focus {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    gap:40px;
 }
-.container-c {
-    display: flex;
+.column {
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-        width: 1158px;
-            margin: 0 auto;
-            padding: 0 15px;
+}
+.column-footer {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.block-footer {
+    display: block;
+    margin-bottom: 16px;
 }
 .flex-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
-
 }
 .flex-logo {
     margin-right: 76px;
@@ -339,12 +338,12 @@ a.link:hover, a.link:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid var(--white-color);
     border-radius: 0px 0px 4px 4px;
     width: 264px;
-    height: 380px;
-    margin-right: 18px;
     background-color: var(--white-color);
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
 }
 .div-person {
     display: flex;
@@ -356,29 +355,22 @@ a.link:hover, a.link:focus {
 .flex-footer {
     padding: 100px 0;
 }
-.inline-block-a {
-    display: inline-block;
-    margin-bottom: 16px;
-}
 .flex-p-one {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px 56px 32px;
+    margin-bottom: 72px;
+    gap: 24px;
 }
 .flex-li-p {
-    padding: 12px 24px 12px 24px;
     border: 1px solid var(--button-color);
     border-radius: 4px;
     background-color: var(--color-text);
-    margin-right: 24px;
 }
 .flex-li {
-    padding: 12px 24px 12px 24px;
     border: 1px solid var(--button-color);
     border-radius: 4px;
     background-color: var(--color-background);
-    margin-right: 24px;
 }
 .flex-li:last-child {
     margin-right: 0px;
@@ -393,15 +385,17 @@ a.link:hover, a.link:focus {
 .flex-p-two {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+
 }
 .flex-p-img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid var(--color-background);
-    margin: 0px 12px 48px 12px;
-    width: 360px;
+    border: 1px solid var(--button-color);
+    border-top: none;
+    width: calc((100% - 48px) / 3);
     height: auto;
     background-color: var(--white-color);
 }
