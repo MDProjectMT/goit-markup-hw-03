@@ -90,25 +90,26 @@ li {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     padding: 12px 24px;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
 }
 .btn-p-items {
     background-color: var(--color-background);
     color: var(--color-text);
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
 }
 .btn-first {
     display: block;
     align-items: center;
     justify-content: center;
     min-width: 169px;
+    height: 56px;
     font-weight: 500;
     background-color: var(--color-text);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    border: 1px solid var(--color-text);
+    border: none;
     border-radius: 4px;
     color: var(--white-color);
     cursor: pointer;
