@@ -113,7 +113,12 @@ li {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
-.btn-first:hover, .btn-first:focus, .btn-p:hover, .btn-p:focus {
+.btn-first:hover, .btn-first:focus {
+    color: var(--white-color);
+    background-color: var(--focus-hover);
+}
+
+.btn-p:hover, .btn-p:focus {
     color: var(--white-color);
     background-color: var(--focus-hover);
     border: 1px solid transparent;
@@ -303,6 +308,7 @@ a.link:hover, a.link:focus {
     justify-content: center;
     align-items: center;
     width: auto;
+    padding-top: 0;
 
 }
 .flex-img {
@@ -360,16 +366,7 @@ a.link:hover, a.link:focus {
     margin-bottom: 72px;
     gap: 24px;
 }
-.flex-li-p {
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
-    background-color: var(--color-text);
-}
-.flex-li {
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
-    background-color: var(--color-background);
-}
+
 .flex-li:last-child {
     margin-right: 0px;
 }
